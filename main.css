@@ -162,7 +162,7 @@ nav {
 #content
 
 { 
-   height: 550px;
+   height: 700px;
    bottom: 200px;
    width:100%;
    background-color: #856f5a;
@@ -177,6 +177,18 @@ nav {
     overflow:visible;
 
 }
+
+
+table th, table td {
+  vertical-align: middle;
+}
+
+.card-light-brown {
+  background-color: #f3e6d9; /* Light brown / beige tone */
+  color: #4b3621; /* Dark brown text for contrast */
+  border: none;
+}
+
 
 #text
 {
