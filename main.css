@@ -2,9 +2,12 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: sans-serif, "Arial";
   background-color: #330033;
   background-image: url(lacebg.png);
+  overflow-y:auto;
+  margin: 0;
+  padding: 0;
+  background: #4A4A4A;
 }
 
 .page-wrapper {
@@ -20,9 +23,21 @@ html, body {
   flex: 1;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+a:hover
+{
+  color:#777;
+  text-decoration: none;
+}
+
 /* Navigation styling */
 .mnav {
-  font-family: "Arial Bold"
+  font-family: "Arial Bold";
   list-style: none;
   padding-left: 0;
   display: flex;
@@ -41,7 +56,7 @@ html, body {
 /* Footer customization */
 .footer {
   color: #28190c !important;
-  margin-left: 10px;
+  margin-left: 0px;
   padding-right: 10px;
   position:sticky; 
 }
@@ -74,15 +89,16 @@ html, body {
 
 header
 {
-    background: #ffffff;
+    font-family: "Arial Bold", Helvetica, sans-serif;
+    color:#000;
     width: 100%;
-     padding-right: 5px;
+    padding-right: 5px;
   }
 
 
 h1
-{
-    font-size: 30pt;  
+{   
+    font-size:45pt;  
     padding-left: 20px;
     
 }
@@ -90,7 +106,8 @@ h1
 h2
 {
     
-    font-size: 12pt;
+    font-size: 25pt;
+    font-weight: bolder;
     padding-left: 20px;
 }
 p 
@@ -116,7 +133,6 @@ p .information
 
 nav a {
     font-family: sans-serif, "Arial";
-    color: black;
     text-decoration: none;
     display: block;           /* Change to block to stack vertically */
     padding: 5px 5px;       /* More padding: 15px top/bottom, 20px left/right */
@@ -125,18 +141,14 @@ nav a {
 
 nav a:hover {
     background-color: #330033;
-    color: white;
 }
 
 nav {
+    font-family: Impact,'Arial Bold', sans-serif;
     background-color: #28190c;
     height: auto;             /* Adjust height to auto so nav wraps links properly */
     padding: 0.1em 0;
     text-align: center;
-    border-left-width: 2px;
-    border-left-style: solid;
-    border-right-width: 2px;
-    border-right-style: solid;
 }
 
 
@@ -155,7 +167,7 @@ nav {
 #container
 {     
     width: 100%;
-    background-color: #000000;
+    background-color: #856f5a;
     z-index:  -2;
 }
 
@@ -165,15 +177,10 @@ nav {
    height: 700px;
    bottom: 200px;
    width:100%;
-   background-color: #856f5a;
+   background-color: #856f5a !important;
    align-content:center;
    text-align:center;
    float:bottom;
-   border-right-color: black;
-   border-right-width: 2px; 
-   border-right-style:solid;
-   border-left-width: 2px; 
-   border-left-style:solid;
     overflow:visible;
 
 }
@@ -197,6 +204,12 @@ table th, table td {
     
 }
 
+.strokeme
+{
+    color:#000;
+    text-shadow: rgb(216, 202, 214) 1px 0 10px;
+    
+}
 .card-img-top {
   height: 200px;
   object-fit: cover;
@@ -213,18 +226,13 @@ table th, table td {
 
 
 #logoinfo
-{
+{  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 35px;
+    color: black;
    padding-top: 2%;
    width: 100%;
    text-align: center;
-   background-color: #372e25;
-   border-right-color: black;
-   border-right-width: 2px; 
-   border-right-style:solid; 
-   border-left-width: 2px; 
-   border-left-style:solid;
-   
-    
+   background-color: #372e25;  
 }
 
 ul {
@@ -257,10 +265,8 @@ ul li {
 ul li a {
     display: block;            /* So links fill their container */
     padding: 15px 20px;        /* Bigger clickable area */
-    color: #fff;
     text-decoration: none;
     text-align: center;
-    font-family: sans-serif, "Arial";
     font-size: 1.5em;
     background-color: transparent; /* Make sure background is transparent unless hovered */
     transition: background-color 0.3s, color 0.3s;
@@ -301,7 +307,6 @@ ul li a:hover {
   width: 40px;
   height: 40px;
   border-right: 50%;
-  color: white;
   font-size: 16px;
   text-decoration: none;
 }
@@ -317,11 +322,11 @@ ul li a:hover {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
   padding: 0;
 }
 
-.footer .nav-links li a {
+.footer .nav-links li a border{
   font-size: 14px;
   color: #777;
   text-decoration: none;
@@ -876,27 +881,7 @@ p.ism-badge a.ism-link:hover {
     *, *:before, *:after {
 -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
-
-body {
- overflow-y:auto;
- font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
- font-weight: 100;
- color: rgba(255, 255, 255, 1);
- margin: 0;
- padding: 0;
- background: #4A4A4A;
- -webkit-touch-callout: none;
- -webkit-user-select: none;
- -khtml-user-select: none;
- -moz-user-select: none;
- -ms-user-select: none;
- user-select: none;
-}
-
-    
-    
-
-    
+  
 /* Animations are cool!  */
 @-webkit-keyframes moveFromTopFade {
   from { opacity: .3; height:0px; margin-top:0px; -webkit-transform: translateY(-100%); }

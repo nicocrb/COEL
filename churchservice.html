@@ -7,11 +7,15 @@
   <title>Church of Eternal Love - Tulsa</title>
 
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="ism/css/my-slider.css">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 <script src="https://kit.fontawesome.com/caad49b084.js" crossorigin="anonymous"></script>
   <script src="ism/js/ism-2.2.min.js"></script>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://alcdn.msauth.net/browser/2.38.0/js/msal-browser.min.js"></script>
 </head>
 <body>
   <div class="page-wrapper">
@@ -27,7 +31,7 @@
 
       <div id="container">
         <div id="logoinfo">
-          <h1 class="strokeme">Church of Eternal Love</h1><br>
+          <h1>Church of Eternal Love</h1><br>
           4606 North Hardford Ave Tulsa, OK 74126<br>
           <a href="tel:1-918-402-7926">Phone: 918-402-7926</a>
         </div>
@@ -44,37 +48,60 @@
           </nav>
         </header>
 
-        <div id="content py-10">
-<section class="container py-5">
-  <div class="row align-items-center">
-    <!-- Left Column: Image -->
-    <div class="col-md-6 mb-4 mb-md-0">
-      <img src="images/indexpageimg.jpg" alt="Church of Eternal Love" class="img-fluid rounded shadow">
-    </div>
+        <div id="content">
+          <section class="container py-5">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">Weekly Church Service Schedule</h2>
+    <p class="text-dark">Join us in worship, prayer, and fellowship</p>
+  </div>
 
-    <!-- Right Column: Welcome Content -->
-    <div class="col-md-6">
-      <h2 class="mb-3">Welcome to The Church of Eternal Love</h2>
-      <p>We’re so glad you’re here. Whether you’re seeking encouragement, inspiration, or simply a place to experience the love of God, we believe you’ve found this page for a reason. Our prayer is that your heart is open to receive His truth—and even if you're still searching, we’re honored to walk beside you today.</p>
-
-      <p>Located in the heart of Tulsa, Oklahoma, The Church of Eternal Love has faithfully served our local community for many years. We are a non-denominational church committed to living out the love of Christ in both word and action. Through neighborhood outreach, especially around the back-to-school season, we provide support to children and families in need. Our small but dedicated food pantry helps feed the hungry, and our church continues to be a place where people can find strength, encouragement, and a reminder that God is always watching over them with care and compassion.</p>
-
-      <p>We will continue this mission of love and service for as long as the Lord calls us to it, trusting in His guidance and provision every step of the way.</p>
-
-      <blockquote class="blockquote">
-        <p class="mb-0">“And let us not grow weary of doing good, for in due season we will reap, if we do not give up.”</p>
-        <footer class="text-light">Galatians 6:9</footer>
-      </blockquote>
-
-      <blockquote class="blockquote">
-        <p class="mb-0">“The Lord is close to the brokenhearted and saves those who are crushed in spirit.”</p>
-        <footer class="text-light">Psalm 34:18</footer>
-      </blockquote>
-
-      <p>Please explore our site to learn more about our mission, ministries, and upcoming events. May the Lord bless you and keep you always.</p>
-    </div>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover shadow-sm">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Day</th>
+          <th scope="col">Service</th>
+          <th scope="col">Time</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sunday</td>
+          <td>Morning Worship</td>
+          <td>10:00 AM</td>
+          <td>Main Sanctuary</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>Youth Ministry</td>
+          <td>10:30 AM</td>
+          <td>Youth Hall</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Midweek Prayer</td>
+          <td>6:30 PM</td>
+          <td>Main Sanctuary</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Bible Study</td>
+          <td>7:00 PM</td>
+          <td>Fellowship Hall</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>Choir Practice</td>
+          <td>4:00 PM</td>
+          <td>Choir Room</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
+
+        
         </div>
   <footer class="footer bg-footer">
     
@@ -114,8 +141,7 @@
       <div class="row">
         <div class="col">
           <div class="copyright">
-            <p style="font-size: 10pt;">Copyright 2019-2025. All Rights Reserved. <br>
-            Designed by <a href="https://nicocrbdesigns.net">NicoCrb Designs</a></p>
+            <p><small>Copyright 2019. All Rights Reserved.</small></p>
           </div>
         </div>
       </div>
